@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Main = () => {
   return (
-    <section>
+    <section className='pb-[34px]'>
       <div className='w-full h-[560px] flex justify-center overflow-hidden relative cursor-auto'>
         <div className='absolute inset-0 bg-[#00000099] z-10'></div>
         <div className='absolute max-w-[1296px] w-full h-full px-[48px] py-[80px] flex items-end'>
