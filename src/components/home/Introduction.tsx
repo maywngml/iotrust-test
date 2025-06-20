@@ -3,7 +3,7 @@ import React from 'react';
 const Introduction = () => {
   return (
     <section>
-      <div className='flex px-12 xl:justify-center'>
+      <div className='flex px-12 pb-8 xl:justify-center'>
         <div className='break-keep xl:w-[1200px]'>
           <div>
             <h4 className='font-bold text-[28px] leading-[1.5] text-inherit'>
