@@ -1,4 +1,9 @@
-import { Main, Introduction, InterviewList } from '@/components/home';
+import {
+  Main,
+  Introduction,
+  InterviewList,
+  CultureList,
+} from '@/components/home';
 
 export default function Home() {
   return (
@@ -6,6 +11,7 @@ export default function Home() {
       <Main />
       <Introduction />
       <InterviewList />
+      <CultureList />
     </main>
   );
 }
