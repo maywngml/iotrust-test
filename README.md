@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### 📌 클론한 서비스
 
-## Getting Started
+1. URL: https://career.iotrust.kr/
+2. 선택 이유: 아이오트러스트의 공식 홈페이지를 클론했습니다. 제한된 시간 내에 컴포넌트 분리와 프로젝트 설계 능력을 두루 보여줄 수 있는 구조라고 판단해 선택했습니다.
 
-First, run the development server:
+### 🛠 사용한 주요 기술 스택
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Next.js: 리액트 기반의 프레임워크로, SSR/SSG/ISR, API Routes 등 다양한 기능을 제공합니다. 이미지 최적화 기능이 기본적으로 내장되어 있어 빠르게 작업하기에 적합하다고 판단해 사용했습니다.
+2. TypeScript: JavaScript에 정적 타입을 추가한 언어로, 타입 불일치로 인한 오류를 사전에 방지하고 코드의 가독성과 유지보수성을 높이기 위해 사용했습니다.
+3. Tailwind CSS: 유틸리티 기반의 CSS 프레임워크로, 클래스 단위로 빠르게 스타일링 할 수 있습니다. 효율적인 UI 작업이 가능하다고 판단해 도입했습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✨ 구현한 주요 요소 설명
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. 메인 배너, 설명, 인터뷰, 조직 문화 섹션을 각각 컴포넌트로 분리했습니다.
+2. 인터뷰와 조직 문화 섹션은 카드 컴포넌트로 별도로 분리해 재사용이 가능하도록 구성했습니다. 카드에 들어가는 데이터는 constants 폴더에 정의하고, 각 데이터에 맞는 타입을 types 폴더에 선언해 가독성을 높이고 코드의 복잡도를 줄였습니다.
+3. 폴더 구조 개요는 다음과 같습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```
+     app: 페이지 렌더링 설정
+     components: 컴포넌트 정의
+       - common: 공통 컴포넌트
+       - home: 메인 페이지 전용 컴포넌트
+     constants: 인터뷰, 네비게이션 등 데이터
+     types: 타입 정의 모음
+   ```
 
-## Learn More
+4. 과제 진행 중 ChatGPT를 활용해 커밋 메시지 작성의 적절성을 확인하거나, 스타일링 오류 발생 시 원인 진단 및 해결책 검토에 활용했습니다. 문제 상황을 설명한 후 직접 해결 방안을 제시하고, 그 방법이 타당한지 검토받는 방식으로 사용했습니다. 해결 방안을 찾지 못했을 때는 해결 방안을 제시해달라고 프롬프트를 작성하기도 했습니다.
 
-To learn more about Next.js, take a look at the following resources:
+### 🧩 아쉬운점과 보완점
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. 제한 시간 내 전체 페이지를 완성하지 못한 점이 아쉬웠습니다.
+2. 반응형 대응과 hover 효과 같은 인터랙션 구현이 부족했던 점도 아쉬움으로 남습니다.
+3. 메타 태그 및 SEO 설정을 하지 못한 점이 아쉬웠습니다.
+4. 전체적으로 네이밍에 더 신경 쓰지 못한 점도 아쉽습니다. 제한 시간에 쫓기다 보니, 보다 의미 있고 일관성 있는 이름을 고민하지 못한 것 같아 보완이 필요하다고 느꼈습니다.
